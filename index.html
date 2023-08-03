@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateForm(){
+            var a=document.feedback.rating[0].checked;
+            var b=document.feedback.rating[1].checked;
+            var c=document.feedback.rating[2].checked;
+            var d=document.feedback.rating[3].checked;
+            var e=document.feedback.rating[4].checked;
+
+            if(a==false && b==false && c==false && d==false && e==false){
+                alert("Enter Rating");
+                return false;
+            }
+        }
+        
+    </script>
+</head>
+<body>
+<!-- ================================================Navigation Bar======================================================= -->
+
+    <header id="head">
+        <nav>
+        <ul>
+                <li><img src="pictures/logo-png.png" alt="Image" id="bhargavi"></li>
+                <li><a href="#homepage" style="color: #ff6161; text-decoration: underline;">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="achievements.html">Achivements</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="">Resume</a></li>
+                <li class="contactme"><a href="#foot">Contact Me</a></li>
+                <li><img src="pictures/portfoliologo.jpeg" alt="Portfolio" id="portfoliologo"></li>
+                
+            
+        </ul>
+    </nav>
+    </header>
+<!-- ================================================Home Page======================================================= -->
+
+    <section id="homepage">
+        <div id="home"> 
+            <div id="intro">
+                <div class="welcome"> 
+                    <h3>Hey, There</h3>
+                    <h3>Welcome to my portfolio</h3>
+                    <br>
+                </div>
+                <div class="name"> 
+                    <h2>I am Bhargavi Machhi</h2>
+                    <h1>I am Into Software Engineering</h1>
+                </div>
+                
+                <br>
+                <div>
+                    <ul class="links">
+                        <li><a href="https://github.com/Bhargavimachhi"><img id="github" src="pictures/github.webp"></a></li>
+                        <li><a href="https://linkedin.com/in/bhargavi-machhi"><img src="pictures/linkedin.png" id="linkedin"></li>
+                        <li><a href="mailto:bhargavimachhi5@gmail.com"><img src="pictures/mail.png" id="mail"></a></li>
+                        <li><a href="https://www.hackerrank.com/bhargavimachhi5?hr_r=1"><img src="pictures/hackerrank.png" id="hackerrank"></a></li>
+                        <li><a href="https://auth.geeksforgeeks.org/user/bhargavi0vh0"><img src="pictures/geeksforgeeks.png" id="gfg"></a></li>
+                        <li><a href="https://www.codechef.com/users/bhargavimachhi"><img src="pictures/codeChef.jpg" id="codechef"></a></li>
+                        
+                    </ul>
+                </div>
+
+                <a href="#page2" id="aboutmebox">About Me</a>
+            </div>
+                <div><img id="homeimage" src="pictures/online-video-chat.gif" alt="Image"></div>
+        </div>
+    </section>
+<!-- ================================================About Me Page======================================================= -->
+
+    <section class="aboutme"  id="page2">
+        <h1>About Me</h1>
+        <div id="aboutsection">
+            <img src="pictures/myphoto.jpeg" alt="Image">
+            <div>
+                <p id="name">I am Bhargavi</p>
+                <p id="sde" style="color: #ff6161;">Aspiring Software Engineer</p>
+                <p><br>I am Computer engineering undergraduate student of GEC-Gn.</p>
+                <p>I am very passionate and hardworking computer engineering student looking forward 
+                to become a skilled Software Engineer and serve my excellence to the company.I am enthusiastic person and love to
+                learn new things.I love doing code. The field of technology always amazes  me that's why i choose the field 
+                of computer engineering to follow my passion. </p>
+                <p><br>Email : bhargavimachhi5@gmail.com</p>
+                <p>Birth Place : Vadodara Gujarat - 390019.</p>
+            </div>
+            
+        </div>
+
+    </section>
+<!-- ================================================Feedback Form======================================================= -->
+
+    <section class="feedbackform">
+        <h1>Feedback Form</h1>
+        <div class="feedback">
+            <div>
+                <img src="pictures/live_chat_anim_2.gif" alt="Image" id="chat">
+            </div>
+            <div class="feedbackbox">
+                <form onsubmit="return validateForm()" method="post" action="index.html" name="feedback">
+                    <div>Name <br><input id="name" type="text" tabindex="1" style="height: 30px; width: 400px;" required></div>
+                    <div>Email <br><input id="name" type="email" tabindex="2" style="height: 30px; width: 400px;"></div>
+                    <div> Rate
+                        <div class="rating"> 
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                        </div>
+                    </div>
+                    <div>Feedback <br><textarea style="height: 150px; width: 400px;" required></textarea></div>
+                    <button type="submit" id="submitbox">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<!-- ================================================Footer======================================================= -->
+    <footer id="foot">
+        <div id="column1">
+            <p id="heading1">Hey There</p>
+            <p><br>Thank You for visiting my portfolio.</p>
+            <p>I am open to accept feedback</p>
+            <p>It will be great to have your
+                valuable advice.</p> 
+            <p id="feedback"></p>
+        </div>
+        <div>
+            <ul id="column2" >
+                <li id="heading2">Quick Links</li>
+                <li><br><a href="index.html#head">Home</a></li>
+                <li><a href="index.html#page2">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="achievements.html">Achivements</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="">Resume</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <ul id="column3">
+                <li id="heading3">Contact Info</li>
+                <li><br>Ph : +91- XXXXX XXXXX</li>
+                <li>Email : bhargavimachhi5@gmail.com</li>
+                <li>Vadodara-390019, Gujarat</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
