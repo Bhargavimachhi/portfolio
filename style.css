@@ -3,16 +3,13 @@ html{
 }
 
 #homepage{
-    /*background-color: #56adb6;*/
     background-color: #ecedff;
-    padding-bottom: 70px;
 }
 
 *{
     margin:0;
     padding: 0;
     font-family: 'Poppins','Arial','Lucida Sans','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* font-family: 'Montserrat Alternates', sans-serif; */
 }
     
 nav{
@@ -21,37 +18,35 @@ nav{
     top: 0;
     left: 0;
     right: 0;
-
 }
-
-header nav ul{
-    margin: 0px;
-    display : flex;
-    list-style-type: none;
-    height : 80px;
+header nav .topnav ul{
+    display: flex;
     background-color: white;
+    height: 60px;
+    border-bottom: 3px solid black;
     align-items: center;
-    word-wrap: break-word;
-    overflow: hidden;
-    border-bottom: solid black;
+}
+.topnav ul li{
+    margin: 0px;
+    list-style-type: none;
+    background-color: white;
     font-size: 20px;
     font-weight: bold;
+    margin: 10px 60px 10px 10px;
+    background-color: white;
+    color: #3b4089;
+}
+.topnav #myLinks a:hover{
+    color: #ff6161;
 }
 .contactme{
     word-wrap: break-word;
     color: #0a4f5d;
     margin-right: 50px;
 }
-header nav ul li{
-    margin-right: 60px;
-    background-color: white;
-    color: #3b4089;
-    }
-
 
 #intro{
-    margin: 200px 30px 140px 100px;
-    
+    margin: 0px 5% 0px 5%;
 }
 
 .name{
@@ -59,25 +54,21 @@ header nav ul li{
     word-wrap: break-word;
     font-weight: bolder;
     color: #3b4089;
-    /* color: #106351; */
     font-size: 35px;
 }
 .welcome{
-    /* color: #17b3b5; */
-    /* color:#7400B8; */
     color: #ff6161;
     font-size: 30px;
     font-weight: bold;
 }
 #home{
     display : flex;
-    margin: auto;
+    padding: 150px 0px 70px 0px;
+
 }
 #homeimage{
-    margin : 130px 50px 60px 0px;
     max-width: 700px;
 }
-
 #homepage ul{
     margin: 50px 0px 50px 50px;
     display : flex;
@@ -90,7 +81,7 @@ header nav ul li{
     background-color: #ecedff;
 }
 
-#github,#linkedin,#gfg,#codechef,#hackerrank,#mail{
+#github,#linkedin,#gfg,#codechef,#leetcode,#mail{
     border-radius: 100%;
     max-width: 60px;
     max-height: 100px;
@@ -110,8 +101,10 @@ header nav ul li{
 #bhargavi{
     max-width: 200px;
     max-height: auto;
-
     padding: 0 30px 0px 30px;
+}
+#page2{
+    background-color: white;
 }
 #aboutmebox{
     visibility: visible;
@@ -127,9 +120,6 @@ header nav ul li{
     box-shadow: 0 5px 10px #424999;
     
 }
-
-
-
 a:link , a:visited{
     color: #3b4089;
     text-decoration: none;
@@ -144,31 +134,45 @@ a:hover{
 }
 
 .aboutme h1,.feedbackform h1{
-    margin-top: 50px;
+    text-align: center;
     font-size: 60px;
     padding-top:100px ;
-    text-align: center;
+    padding-right: 500px;
     text-decoration: underline;
     color: #3b4089;
 }
 .aboutme img{
     max-width: 300px;
-    margin: 0px 100px 50px 200px;
+    /* margin: 0px 100px 50px 200px; */
     border-radius: 10%;
     border: 5px solid black ;
+    margin-right: 50px;
     box-shadow: 0 10px 20px rgb(57, 53, 53);
     
 }
 .aboutme p{
     font-size: 20px;
     font-weight: bolder;
+    text-align: left;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f79999;
     word-wrap: break-word;
 }
 .aboume #sde{
     color:#560BAD;
-    
+}
+header .lines{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+header .lines div{
+    background-color: black;
+    height: 4px;
+    width: 50px;
+    margin: 3px 3px;
 }
 .aboutme #name{
     color: black;
@@ -176,32 +180,19 @@ a:hover{
 }
 
 .aboutme #aboutsection{
-    margin: 60px 100px 100px 100px;
+    margin: 60px 10% 100px 10%;
     display: flex;
+    text-align: center;
 }
 
 footer{
-    /* background-color: #0a4f5d; */
-    /* background-color: #909ba5; */
     background: #f1f1f1!important;
     border-top: 4px solid #e2e2e2!important;
     display: flex;
     padding: 20px;
 } 
-#column1{
- 
-    word-wrap: break-word;
-    margin: 0 0 0 0;
-    padding: 10px 50px 10px 50px;   
-}
-#column2{
-  
-    margin: 0 0 0 0;
-    padding: 10px 150px 10px 150px;
-}
-#column3{
-    margin: 0 0 0 0;
-    padding: 10px 100px 10px 100px;
+#column1,#column2,#column3{
+    padding: 50px 50px 0px 50px;
 }
 
 footer ul li{
@@ -210,13 +201,14 @@ footer ul li{
     color:black;
     font-size: 20px;
     background: #f1f1f1!important;
-    list-style-type:none;
+    list-style-type: none;
 }
 
 #heading1 ,#heading2 ,#heading3{
     color: black;
     font-size: 25px;
     font-weight: bold;
+    list-style-type: none;
    
 }
 
@@ -231,13 +223,13 @@ footer p{
 }
 
 .feedbackform h1{
-    padding: 50px 0px 0px 0px;
+    padding: 100px 0px 20px 0px;
     color: #3b4089;
 }
 
 .feedback{
     display: flex;
-    margin: 0px 100px 0px 100px;
+    margin: 0px 0px 0px 100px;
     align-items: center;
     border-radius: 20px;
     box-shadow: #3e4243;
@@ -246,6 +238,8 @@ footer p{
 .feedbackbox input[type=text] ,.feedbackbox input[type=email]{
     font-size: 15px;
     display: inline-block;
+    width: 150%;
+    height: 30px;
     border: 1px solid #4d4d51;
     border-radius: 4px;
     box-sizing: border-box;
@@ -256,6 +250,8 @@ footer p{
     display: inline-block;
     border: 1px solid #4d4d51;
     border-radius: 4px;
+    width: 150%;
+    height: 100px;
     box-sizing: border-box;
 }
 
@@ -285,16 +281,13 @@ footer p{
     background-color: #f79999;
 }
 
-.rating {
+.rating{
     width: 208px;
     height: 40px;
-    margin: 0 0 0 0;
-   
-    
+    margin: 0 0 0 0; 
 }
 .rating label {
     float: right;
-    /* position: relative; */
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -321,3 +314,15 @@ footer #column2 li a{
 footer #column2 li a:hover{
     text-decoration: underline;
 }
+#certification{
+    list-style-type:square; 
+    color: #3b4089;
+}
+
+header .topnav a.icon{
+    display: none;
+    position: absolute;
+    margin-right: 20px;
+    right: 0;
+    top: 0;
+  }

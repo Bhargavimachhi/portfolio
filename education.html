@@ -14,7 +14,7 @@
 
         section img{
             margin: 20px;
-           max-width: 300px;
+            max-width: 300px;
             max-height: 500px;
             border-radius: 10px;
         }
@@ -28,11 +28,13 @@
             box-shadow: 0 5px 10px rgb(68, 64, 64);
             border-radius: 25px;
             background-color: white;
-            margin: 60px 100px 50px 100px;
+            margin: 60px 5% 50px 5%;
         }
 
-        #college{
-            margin:150px 100px 50px 100px;
+        @media screen and (max-width: 700px) {
+            #college,#hsc,#ssc,#gujcet{
+                display: block;
+            }
         }
 
         section h1{
@@ -48,28 +50,34 @@
             margin: 30px;
         }
 
+        @media screen and (max-width:375px){
+        section img{
+            max-width: 250px;
+        }
+}
 
     </style>
 </head>
 <body>
-    <header>
+    <header id="head">
         <nav>
-            <ul>
-                <li><img src="pictures/logo-png.png" alt="Image" id="bhargavi"></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html" style="color: #ff6161; text-decoration: underline;">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="achievements.html">Achivements</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="">Resume</a></li>
-                <li class="contactme"><a href="index.html#foot">Contact Me</a></li>
-                <li ><img src="pictures/portfoliologo.jpeg" alt="Portfolio" id="portfoliologo"></li>
-            </ul>
-    </nav>
+            <div class="topnav">
+                <ul class="navlist">
+                    <li><div id="namelogo"><img src="pictures/logo-png.png" alt="Image" id="bhargavi"></div></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html" style="color: #ff6161; text-decoration: underline;">Education</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="achievements.html">Achivements</a></li>
+                    <li><a href="experience.html" >Experience</a></li>
+                    <li><a href="Documents/myresume.pdf">Resume</a></li>
+                    <li class="contactme"><a href="index.html#foot">ContactMe</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <section>
-        <div id="college">
+        <div id="college" style="margin-top: 120px;">
             <div><a href="https://www.gecg28.ac.in/"><img src="pictures/gec.webp"></a></div>
             <div id="detailclg">
                 <h1>B.E. Computer Engineering</h1><br>

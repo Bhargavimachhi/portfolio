@@ -1,0 +1,37 @@
+@media screen and (max-width:1400px) {
+    html{
+        width: 1500px;
+    }
+   #home #homeimage,.feedback img{
+        display: none;
+    }
+    #intro{
+        max-width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    .feedbackbox input[type=text] ,.feedbackbox input[type=email]{
+        width: 600px;
+        height: 35px;
+    }
+    .feedbackbox textarea{
+        width: 600px;
+        height: 100px;
+    }
+    #page2 #aboutsection{
+        display: block;
+    }
+    header nav ul li{
+        align-items: center;
+    }
+      
+    .topnav ul li a{
+        display: none;
+    }
+    .topnav a.icon{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

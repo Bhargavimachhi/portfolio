@@ -6,6 +6,8 @@
     <title>My First Website</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         function validateForm(){
             var a=document.feedback.rating[0].checked;
@@ -16,10 +18,10 @@
 
             if(a==false && b==false && c==false && d==false && e==false){
                 alert("Enter Rating");
+                document.feedback.rating[0].focus();
                 return false;
             }
         }
-        
     </script>
 </head>
 <body>
@@ -27,24 +29,24 @@
 
     <header id="head">
         <nav>
-        <ul>
-                <li><img src="pictures/logo-png.png" alt="Image" id="bhargavi"></li>
-                <li><a href="#homepage" style="color: #ff6161; text-decoration: underline;">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="achievements.html">Achivements</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="">Resume</a></li>
-                <li class="contactme"><a href="#foot">Contact Me</a></li>
-                <li><img src="pictures/portfoliologo.jpeg" alt="Portfolio" id="portfoliologo"></li>
-                
-            
-        </ul>
-    </nav>
+            <div class="topnav">
+                <ul class="navlist">
+                    <li><div id="namelogo"><img src="pictures/logo-png.png" alt="Image" id="bhargavi"></div></li>
+                    <li><a href="index.html" style="color: #ff6161; text-decoration: underline;">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="achievements.html">Achivements</a></li>
+                    <li><a href="experience.html" >Experience</a></li>
+                    <li><a href="Documents/myresume.pdf">Resume</a></li>
+                    <li class="contactme"><a href="#foot">ContactMe</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
 <!-- ================================================Home Page======================================================= -->
 
-    <section id="homepage">
+    <section id="homepage" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
         <div id="home"> 
             <div id="intro">
                 <div class="welcome"> 
@@ -56,17 +58,15 @@
                     <h2>I am Bhargavi Machhi</h2>
                     <h1>I am Into Software Engineering</h1>
                 </div>
-                
                 <br>
                 <div>
                     <ul class="links">
                         <li><a href="https://github.com/Bhargavimachhi"><img id="github" src="pictures/github.webp"></a></li>
                         <li><a href="https://linkedin.com/in/bhargavi-machhi"><img src="pictures/linkedin.png" id="linkedin"></li>
                         <li><a href="mailto:bhargavimachhi5@gmail.com"><img src="pictures/mail.png" id="mail"></a></li>
-                        <li><a href="https://www.hackerrank.com/bhargavimachhi5?hr_r=1"><img src="pictures/hackerrank.png" id="hackerrank"></a></li>
+                        <li><a href="https://leetcode.com/bhargavimachhi/"><img src="pictures/leetcode.png" id="leetcode"></a></li>
                         <li><a href="https://auth.geeksforgeeks.org/user/bhargavi0vh0"><img src="pictures/geeksforgeeks.png" id="gfg"></a></li>
                         <li><a href="https://www.codechef.com/users/bhargavimachhi"><img src="pictures/codeChef.jpg" id="codechef"></a></li>
-                        
                     </ul>
                 </div>
 
@@ -85,16 +85,15 @@
                 <p id="name">I am Bhargavi</p>
                 <p id="sde" style="color: #ff6161;">Aspiring Software Engineer</p>
                 <p><br>I am Computer engineering undergraduate student of GEC-Gn.</p>
-                <p>I am very passionate and hardworking computer engineering student looking forward 
-                to become a skilled Software Engineer and serve my excellence to the company.I am enthusiastic person and love to
-                learn new things.I love doing code. The field of technology always amazes  me that's why i choose the field 
+                <p>I am very passionate and hardworking computer engineering student<p>
+                <p>looking forward to become a skilled Software Engineer and serve my excellence to the company.</p>
+                <p>I am enthusiastic person and love to learn new things.</p>
+                <p>The field of technology always amazes  me that's why i choose the field 
                 of computer engineering to follow my passion. </p>
                 <p><br>Email : bhargavimachhi5@gmail.com</p>
                 <p>Birth Place : Vadodara Gujarat - 390019.</p>
-            </div>
-            
+            </div> 
         </div>
-
     </section>
 <!-- ================================================Feedback Form======================================================= -->
 
@@ -105,19 +104,19 @@
                 <img src="pictures/live_chat_anim_2.gif" alt="Image" id="chat">
             </div>
             <div class="feedbackbox">
-                <form onsubmit="return validateForm()" method="post" action="index.html" name="feedback">
-                    <div>Name <br><input id="name" type="text" tabindex="1" style="height: 30px; width: 400px;" required></div>
-                    <div>Email <br><input id="name" type="email" tabindex="2" style="height: 30px; width: 400px;"></div>
+                <form onsubmit="return validateForm()" method="post" action="index.html" name="google-sheet">
+                    <div>Name <br><input id="name" type="text" tabindex="1" name="Name" required></div>
+                    <div>Email <br><input id="name" type="email" tabindex="2" name="Email" required></div>
                     <div> Rate
                         <div class="rating"> 
-                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                            <input type="radio" id="star5" name="Rating" value="5" /><label for="star5"></label>
+                            <input type="radio" id="star4" name="Rating" value="4" /><label for="star4"></label>
+                            <input type="radio" id="star3" name="Rating" value="3" /><label for="star3"></label>
+                            <input type="radio" id="star2" name="Rating" value="2" /><label for="star2"></label>
+                            <input type="radio" id="star1" name="Rating" value="1" /><label for="star1"></label>
                         </div>
                     </div>
-                    <div>Feedback <br><textarea style="height: 150px; width: 400px;" required></textarea></div>
+                    <div>Feedback <br><textarea tabindex="3" name="Feedback" required></textarea></div>
                     <button type="submit" id="submitbox">Submit</button>
                 </form>
             </div>
@@ -128,8 +127,8 @@
         <div id="column1">
             <p id="heading1">Hey There</p>
             <p><br>Thank You for visiting my portfolio.</p>
-            <p>I am open to accept feedback</p>
-            <p>It will be great to have your
+            <p>Please rate my portfolio</p>
+            <p>It will be great to <br>have your
                 valuable advice.</p> 
             <p id="feedback"></p>
         </div>
@@ -155,5 +154,16 @@
             </ul>
         </div>
     </footer>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxCkPoNDYuADAK5v2JQX10JHX2ql9hKSwRECtQ54lyreP2mVdS0zoqGoKF-g_J65qkrEw/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank You For Your Feedback !!"))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>

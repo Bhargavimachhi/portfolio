@@ -10,25 +10,59 @@
         body{
             background-color: #ecedff;
         }
+        section div{
+            color: #f79999;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid black;
+            box-shadow: 0 5px 10px rgb(68, 64, 64);
+            border-radius: 25px;
+            background-color: white;
+            margin: 60px 5% 50px 5%;
+            padding : 50px;
+        }
+        section h1{
+            color: #3b4089;
+            font-weight: bold;
+        }
+
+        section ul li{
+            align-items: center;
+            list-style-type: none;
+        }
+
     </style>
 </head>
 <body>
-    <header>
+    <header id="head">
         <nav>
-        <ul>
-                <li><img src="pictures/logo-png.png" alt="Image" id="bhargavi"></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="achievements.html">Achivements</a></li>
-                <li><a href="experience.html" style="color: #ff6161; text-decoration: underline;">Experience</a></li>
-                <li><a href="">Resume</a></li>
-                <li class="contactme"><a href="index.html#foot">Contact Me</a></li>
-                <li><img src="pictures/portfoliologo.jpeg" alt="Portfolio" id="portfoliologo"></li>
-        </ul>
-    </nav>
+            <div class="topnav">
+                <ul class="navlist">
+                    <li><div id="namelogo"><img src="pictures/logo-png.png" alt="Image" id="bhargavi"></div></li>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="achievements.html">Achivements</a></li>
+                    <li><a href="experience.html" style="color: #ff6161; text-decoration: underline;">Experience</a></li>
+                    <li><a href="Documents/myresume.pdf">Resume</a></li>
+                    <li class="contactme"><a href="index.html#foot">ContactMe</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <h1 style="margin:100px; color: #ff6161;">I don't have any experience yet.</h1>
+    <section>
+        <div id="codesoft" style="margin-top: 120px;">
+            <h1>Virtual Java Programmer Intern</h1><br>
+            <ul>
+                <li>Organiser : CodeSoft</li>
+                <li>Enrolled in virtual internship programme at codesoft</li>
+                <li>Created Projects using Java Programming</li>
+                <li>Offers Internship at Amazon to selected candidates</li>
+            </ul>
+        </div>
+    </section>
+    
+
 </body>
 </html>
