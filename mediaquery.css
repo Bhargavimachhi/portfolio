@@ -2,13 +2,63 @@
     html{
         width: 1500px;
     }
-   #home #homeimage,.feedback img{
+    header nav .topnav ul{
+        height: 100px;
+        border-bottom: 6px solid black;
+    }
+    #intro{
+        padding: 50px;
+    }
+    .name{
+        font-size: 75px;
+    }
+    .welcome{
+        font-size: 65px;
+    }
+    #homepage{
+        height: 1600px;
+    }
+    .aboutme img{
+        max-width:80%;
+        
+    }
+    #github,#linkedin,#gfg,#codechef,#leetcode,#mail{
+        max-width: 120px;
+        max-height: 150px;
+    }
+    #aboutmebox{
+        border: 5px black solid;
+        border-radius: 15px;
+        align-items: center;
+        font-size: 70px;
+        padding: 30px 50px 30px 50px;
+        box-shadow: 0 10px 15px #424999;
+        
+    }
+    #home #homeimage,.feedback img{
         display: none;
     }
     #intro{
         max-width: 100%;
         margin: auto;
         align-items: center;
+    }
+    .aboutme h1,.feedbackform h1{
+        text-align: center;
+        font-size: 120px;
+        padding-top:100px;
+    }
+    .aboutme p{
+        font-size: 50px;
+    }
+    .aboutme #name{
+        color: black;
+        font-size: 60px;
+    }
+    #bhargavi{
+        max-width:450px;
+        max-height: 100px;
+        padding: 0 30px 0px 30px;
     }
     .feedbackbox input[type=text] ,.feedbackbox input[type=email]{
         width: 600px;
@@ -24,7 +74,52 @@
     header nav ul li{
         align-items: center;
     }
-      
+    .feedbackbox input[type=text] ,.feedbackbox input[type=email]{
+        font-size: 30px;
+        width: 300%;
+        height: 60px;
+        border: 3px solid #4d4d51;
+        border-radius: 8px;
+    }
+    .feedbackbox textarea{
+        font-size: 30px;
+        border: 3px solid #4d4d51;
+        border-radius: 4px;
+        width: 300%;
+        height: 200px;
+    }
+    .feedbackbox{
+        font-size: 55px;
+    }
+    .rating{
+        width: 300px;
+        height: 100px;
+        margin: 10px; 
+    }
+    .rating label {
+        float: right;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        
+    }
+    .rating label:before {
+        content: "\2605";
+        font-size: 85px;
+        color: #ccc;
+    }
+    
+    .feedbackform #submitbox{
+        border: 5px black solid;
+        border-radius: 15px;
+        align-items: center;
+        font-size: 70px;
+        padding: 30px 50px 30px 50px;
+        box-shadow: 0 10px 15px #424999;
+    }
+    footer #column1 p,footer #column2 li a,footer #column3 li,footer #column2 #heading2{
+        font-size: 45px;
+    }
     .topnav ul li a{
         display: none;
     }
