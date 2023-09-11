@@ -76,7 +76,7 @@
     }
     .feedbackbox input[type=text] ,.feedbackbox input[type=email]{
         font-size: 30px;
-        width: 300%;
+        width: 1100px;
         height: 60px;
         border: 3px solid #4d4d51;
         border-radius: 8px;
@@ -85,7 +85,7 @@
         font-size: 30px;
         border: 3px solid #4d4d51;
         border-radius: 4px;
-        width: 300%;
+        width: 1100px;
         height: 200px;
     }
     .feedbackbox{
